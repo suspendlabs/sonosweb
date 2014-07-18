@@ -1,0 +1,7 @@
+venv
+sonosweb/config.py
+sonosweb/public/bower_components
+*.pyc
+*.swp
+*.sass-cache*
+node_modules
