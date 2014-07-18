@@ -1,0 +1,14 @@
+<div class="server row">
+  <div class="small-12 columns">
+    <input type="url" name="server" data-ng-model="server" placeholder="http://example.com:5005" />
+  </div>
+</div>
+
+<div class="status row">
+  <div class="small-12 columns">
+    <div class="track">{{ state.currentTrack.artist }} - {{ state.currentTrack.title }}</div>
+    <div class="album">{{ state.currentTrack.album }}</div>
+    <div class="time">{{ state.currentTrack.duration }}</div>
+    <div class="state">{{ state.currentState }}</div>
+  </div>
+</div>

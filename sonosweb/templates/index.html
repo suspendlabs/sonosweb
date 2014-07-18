@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" ng-app="sonos-web">
+  <head>
+      <title>Sonos Web</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/sonos-web.css') }}" />
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}" />
+  </head>
+  <body>
+    <div class="contain-to-grid">
+      <nav class="top-bar" data-topbar>
+        <ul class="title-area">
+          <li class="name">
+            <h1><a href="/">Sonos Web</a></h1>
+          </li>
+          <li class="toggle-topbar menu-icon"><a href=""><span></span></a></li>
+        </ul>
+        <section class="top-bar-section">
+          <ul class="right"></ul>
+        </section>
+      </nav>
+    </div>
+    <div class="content" ng-view></div>
+    <script src="{{ url_for('static', filename='bower_components/modernizr/modernizr.js') }}"></script>
+    <script src="{{ url_for('static', filename='bower_components/angular/angular.js') }}"></script>
+    <script src="{{ url_for('static', filename='bower_components/angular-route/angular-route.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='bower_components/angular-resource/angular-resource.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='bower_components/jquery/dist/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='bower_components/foundation/js/foundation.min.js') }}"></script>
+
+    <script src="{{ url_for('static', filename='js/vendor/mm-foundation-tpls-0.1.0.min.js') }}"></script>
+
+    <script src="{{ url_for('static', filename='js/controllers.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/services.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/filters.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/directives.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+  </body>
+</html>

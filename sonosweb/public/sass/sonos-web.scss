@@ -1,0 +1,74 @@
+/* sonos-web.scss */
+
+@import "settings";
+@import "compass/css3/box-shadow";
+
+$weight-light: 300;
+$weight-heavy: 600;
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+
+.top-bar {
+  .top-bar-section li a:not(.button) {
+    color: white;
+  
+    &:hover {
+      color: $primary-color;
+    }
+  }
+}
+
+.content {
+  margin-top: 10px;
+}
+
+.pagetitle {
+  &.centered {
+    text-align: center;
+  }
+}
+
+.tabs {
+  .tab-box .tab-title {
+    border: {
+      style: solid;
+      width: 1px 0 1px 1px;
+      color: #cccccc;
+    }
+
+    z-index: 1;
+    background-color: #efefef;
+    margin: 0 -5px 0 0;
+    padding: 0.9375em;
+    display: inline-block;
+
+    color: #2BA6CB; 
+    text-decoration: none;
+    cursor: pointer;
+
+    &:last-child {
+      border-right: 1px solid #cccccc;
+    }
+
+    &.active {
+      border-bottom: 1px solid white;
+      background-color: white;
+    }
+  }
+
+  .data-content {
+    border: 1px solid #cccccc;
+    z-index: 10;
+    padding: 0.9375em;
+    background-color: white;
+    display: none;
+
+    margin-top: -1px;
+
+    &.active {
+      display: block;
+    }
+  }
+}

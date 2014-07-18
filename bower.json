@@ -1,0 +1,28 @@
+{
+  "name": "sonosweb",
+  "dependencies": {
+    "jquery": "~2.1.0",
+    "angular-cookies": "~1.2.16",
+    "angular-resource": "~1.2.16",
+    "angular-route": "~1.2.16",
+    "angular": "~1.2.16",
+    "modernizr": "~2.7.2",
+    "foundation": "~5.2.2"
+  },
+  "version": "0.1.0",
+  "homepage": "https://github.com/suspendlabs/sonosweb",
+  "authors": [
+    "Brandon Peters <brandon@suspend.io>"
+  ],
+  "description": "Sonos Web Frontend",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "sonosweb/public/bower_components",
+    "test",
+    "tests"
+  ]
+}
